@@ -110,7 +110,7 @@
   </section>
 </body>
 </html> -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -246,7 +246,7 @@
       <img src="./assets/ACLogo.png" alt="Logo">
     </div>
 
-    <!-- Hamburger Toggle -->
+    Hamburger Toggle 
     <input type="checkbox" id="menu-toggle" class="menu-toggle" />
     <label for="menu-toggle" class="hamburger">
       <span></span>
@@ -254,7 +254,7 @@
       <span></span>
     </label>
 
-    <!-- Navigation Menu -->
+    Navigation Menu 
     <nav>
       <ul class="nav-links">
         <li>Home</li>
@@ -272,4 +272,48 @@
   </section>
 
 </body>
-</html>
+</html> -->
+<div class="sentences">
+  <p class="sentence">This is the first sentence.</p>
+  <p class="sentence">Here comes the second sentence.</p>
+  <p class="sentence">Finally, the third sentence appears.</p>
+</div>
+<style>
+.sentences {
+  position: relative;
+  width: 400px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.sentence {
+  position: absolute;
+  opacity: 0;
+  animation: fadeCycle 9s infinite;
+  width: 100%;
+}
+
+/* Stagger animations with delays */
+.sentence:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.sentence:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.sentence:nth-child(3) {
+  animation-delay: 6s;
+}
+
+/* Animation: fade in, stay, fade out */
+@keyframes fadeCycle {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+</style>
