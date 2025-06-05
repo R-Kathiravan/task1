@@ -28,8 +28,14 @@
 
         .header-img {
             display: grid;
-            align-items: end;
+            align-items: center;
             justify-items: end;
+            
+        }
+        .header-img img{
+            width: 50%;
+            height: 70%;
+            /* padding: 1; */
         }
 
         .menu {
@@ -530,6 +536,80 @@
             background-color: rgb(146, 249, 155);
         }
 
+         .footer-div {
+            display: grid;
+            grid-template-columns: 1fr .5fr 1fr 1fr;
+            background-color: rgb(17, 36, 57);
+             color: white;
+            height: 100%;
+            width: 100%;
+            padding-top: 5%;
+            overflow: hidden;
+            /* line-height: 30px; */
+        }
+
+        .footer-logo {
+             display: grid;
+             justify-items: center;
+            align-content: center;
+
+
+        }
+
+        .footer-logo p {
+            display: grid;
+            justify-items: end;
+            line-height: 20px;
+            color: #858D99;
+        }
+
+        .links a,
+        li {
+            text-decoration: none;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        a,
+        li {
+            text-decoration: none;
+            line-height: 40px;
+            color: #858D99;
+        }
+
+        .get-in-touch {
+            padding-right: 30%;
+        }
+
+        .projects button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgb(97, 255, 118);
+            color: white;
+            border-color: rgb(97, 255, 118);
+            cursor: pointer;
+        }
+
+        .footer-div h4 {
+            font-size: 24px;
+        }
+
+        .footer-arcon {
+            text-align: center;
+            padding-top: 7%;
+            background-color: rgb(17, 36, 57);
+            color: white;
+            width: 100%;
+        }
+
+        .copy-right {
+            background-color: #3BB288;
+            text-align: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            color: white;
+            width: 100%;
+        }
         @media (max-width: 768px) {
             header {
                 grid-template-columns: 1fr 4fr 1fr;
@@ -688,6 +768,19 @@
                 width: 100%;
 
             }
+             .footer-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 10px;
+        gap: 20px;
+    }        
+    .footer-logo{
+                     justify-items: start;
+
+    }
+   .footer-div ul{
+        padding-left: 0%;
+    } 
         }
 
 
