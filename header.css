@@ -193,8 +193,8 @@
         .clients {
             width: 100%;
             background-color: white;
-            display: grid;
-            gap: 10px;
+            /* display: grid; */
+            gap: 30px;
             overflow: hidden;
         }
 
@@ -225,6 +225,9 @@
         .client-heading {
             text-align: center;
             font-size: 40px;
+            /* gap:20px; */
+                padding-bottom: 2%;
+
             text-transform: uppercase;
             background: linear-gradient(to right, #4ad8ff, #fb3030);
             -webkit-background-clip: text;
@@ -242,13 +245,13 @@
 
         .about-content {
             position: relative;
-            background-color: #0E1E2F;
+            /* background-color: #0E1E2F; */
             display: flex;
             flex-direction: row-reverse;
             overflow: hidden;
         }
 
-        .about-us h2 {
+        /* .about-us h2 {
             background: linear-gradient(to left, #12353e, #5ac9e4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -256,12 +259,12 @@
             font-size: 30px;
             text-transform: uppercase;
 
-        }
+        } */
 
 
         .about-video video {
             width: 100%;
-            height: 90%;
+            height: 80%;
             /* padding-top: 8%; */
             object-fit: cover;
             border-color: rgba(0, 0, 0, 0.05);
@@ -275,18 +278,24 @@
             -webkit-text-fill-color: transparent; */
 
         }
+        .about-video{
+            display: grid;
+            align-items: center;
+    justify-content: center;
+}
 
         .about {
             position: relative;
             top: 10%;
-            left: 20%;
+            left: 10%;
+            right: 0;
             color: white;
             max-width: 40%;
             font-size: 1.2rem;
             line-height: 1.6;
             padding: 20px;
             border-radius: 10px;
-            padding-top: 10%;
+            padding-top: 8%;
             opacity: 0.8;
         }
 
@@ -343,6 +352,7 @@
             overflow-y: auto;
             font-size: 16px;
             text-align: left;
+            line-height: 20px;
             /* transform: ; */
         }
 
@@ -350,10 +360,13 @@
             /* top:10%; */
             padding-top: 10%;
         }
-
-        .hidden-service ul {
-            line-height: 190%;
+        .hidden-service p{
+            line-height: 180%;
+        }
+        .hidden-service li {
+            /* line-height: 1 0%; */
             list-style: none;
+            color: white;
         }
 
         .service-image1:hover .hidden-service {
@@ -406,14 +419,14 @@
 
         .image-item {
             position: relative;
-            max-width: 400px;
+            max-width: 500px;
             border-radius: 10px;
             overflow: hidden;
         }
 
         .image-item img {
             width: 100%;
-            height: auto;
+            height: 100%;
             border-radius: 10px;
             display: block;
         }
@@ -422,7 +435,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            color: #fff;
+            color: #ffffff;
             padding: 8px;
             font-size: 16px;
             text-align: left;
@@ -442,7 +455,7 @@
             bottom: 0;
             width: 100%;
             padding: 15px;
-            color: white;
+            color: rgb(228, 238, 255);
             font-size: 14px;
             text-align: left;
             transform: translateY(100%);
@@ -467,6 +480,14 @@
             background: linear-gradient(to left, #e0f8ff, #008979);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            /* gap: 90px; */
+            /* padding: 20px;
+            gap: 90%; */
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+        .uptodate-heading img{
+            padding-top: 2%;
         }
 
         .card {
@@ -716,6 +737,8 @@
 
             .clients {
                 width: 100%;
+                display: grid;
+                gap:30px;
             }
 
             .client-images {
@@ -723,6 +746,7 @@
             }
 
             .client-images img {
+                /* display: grid; */
                 width: 50%;
                 height: 50%;
                 margin: 0;
@@ -858,5 +882,11 @@
 
             .banner-sentence {
                 font-size: 18px;
+            }
+            .footer-arcon{
+                font-size: 12px;
+            }
+            .copy-right{
+                font-size: 14px;
             }
         }
