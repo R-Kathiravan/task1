@@ -772,17 +772,17 @@
             .service-image1,
             .service-image2 {
                 width: 100%;
-                height: 80vh;
+                height: 60vh;
             }
 
             .service-image1:hover {
                 transform: translatey(20px);
-
+ 
             }
 
             .service-image2:hover {
                 transform: translatey(-20px);
-            }
+             }
 
             .projects-images {
                 display: grid;
